@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styling.css" rel="stylesheet">
+    <title>Darts Scorer</title>
+</head>
+<body class="body">
+
+    <div id="title"><h1>Darts Scorer</h1></div> 
+    
+    <div id="FirstTo">
+        <p>Winning number of legs</p>
+        <label class="rb">First To 1 Leg
+            <input type="radio" name="win" id="rb1" value="ft1">
+        </label>
+        <label class="rb">First To 3 Legs
+            <input type="radio" name="win" id="rb2" value="ft3">
+        </label>
+        <label class="rb">First To 5 Legs
+            <input type="radio" name="win" id="rb3" value="ft5">
+        </label>
+        
+    </div>
+
+    <div class="player1Legs">
+    <h4 class="p1Legs" class="pLegs">Player 1 Legs Won</h4>
+    <h4 id="p1LegsCount"></h4>
+    </div>
+
+    <div class="player2Legs">
+        <h4 class="p2Legs" class="pLegs">Player 2 Legs Won</h4>
+            <h4 id="p2LegsCount"></h4>
+    </div>
+</div>
+
+    <div id="p1Heading">
+        <h2 class="score">Player One Score</h2>
+            <h2 id="p1Score" class="score" class="num"></h2>
+                <input type="number" id="p1Turn"><br>
+                <button type="submit" id="p1Btn" class="btn">Submit Score</button>
+    </div>
+
+    <div id="p2Heading">
+        <h2 class="score">Player Two Score</h2>
+            <h2 id="p2Score" class="score" class="num"></h2>
+                <input type="number" id="p2Turn"><br>
+                <button type="submit" id="p2Btn" class="btn">Submit Score</button>
+    </div>
+
+<script src="dartsApp.js"></script>
+
+</body>
+
+</html>
